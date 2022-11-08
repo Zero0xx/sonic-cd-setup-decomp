@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60D8ED3B-E6C1-4D8D-B059-9E46289F214F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Xml</RootNamespace>
+    <AssemblyName>System.Data.SqlXml</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Res.cs" />
+    <Compile Include="Utils\ResCategoryAttribute.cs" />
+    <Compile Include="Utils\ResDescriptionAttribute.cs" />
+    <Compile Include="Xsl\ExecuteDelegate.cs" />
+    <Compile Include="Xsl\IErrorHelper.cs" />
+    <Compile Include="Xsl\IlGen\BranchingContext.cs" />
+    <Compile Include="Xsl\IlGen\GenerateHelper.cs" />
+    <Compile Include="Xsl\IlGen\GenerateNameType.cs" />
+    <Compile Include="Xsl\IlGen\ItemLocation.cs" />
+    <Compile Include="Xsl\IlGen\IteratorDescriptor.cs" />
+    <Compile Include="Xsl\IlGen\OptimizerPatternArgument.cs" />
+    <Compile Include="Xsl\IlGen\OptimizerPatternName.cs" />
+    <Compile Include="Xsl\IlGen\OptimizerPatterns.cs" />
+    <Compile Include="Xsl\IlGen\PossibleXmlStates.cs" />
+    <Compile Include="Xsl\IlGen\StaticDataManager.cs" />
+    <Compile Include="Xsl\IlGen\StorageDescriptor.cs" />
+    <Compile Include="Xsl\IlGen\TailCallAnalyzer.cs" />
+    <Compile Include="Xsl\IlGen\UniqueList.cs" />
+    <Compile Include="Xsl\IlGen\XmlILAnnotation.cs" />
+    <Compile Include="Xsl\IlGen\XmlILConstructInfo.cs" />
+    <Compile Include="Xsl\IlGen\XmlILConstructMethod.cs" />
+    <Compile Include="Xsl\IlGen\XmlILConstructors.cs" />
+    <Compile Include="Xsl\IlGen\XmlILElementAnalyzer.cs" />
+    <Compile Include="Xsl\IlGen\XmlILMethodAttributes.cs" />
+    <Compile Include="Xsl\IlGen\XmlILMethods.cs" />
+    <Compile Include="Xsl\IlGen\XmlILModule.cs" />
+    <Compile Include="Xsl\IlGen\XmlILNamespaceAnalyzer.cs" />
+    <Compile Include="Xsl\IlGen\XmlILOptimization.cs" />
+    <Compile Include="Xsl\IlGen\XmlILOptimizerVisitor.cs" />
+    <Compile Include="Xsl\IlGen\XmlILStateAnalyzer.cs" />
+    <Compile Include="Xsl\IlGen\XmlILStorageMethods.cs" />
+    <Compile Include="Xsl\IlGen\XmlILTrace.cs" />
+    <Compile Include="Xsl\IlGen\XmlILTypeHelper.cs" />
+    <Compile Include="Xsl\IlGen\XmlILVisitor.cs" />
+    <Compile Include="Xsl\Int32Pair.cs" />
+    <Compile Include="Xsl\ISourceLineInfo.cs" />
+    <Compile Include="Xsl\Qil\IQilAnnotation.cs" />
+    <Compile Include="Xsl\Qil\QilBinary.cs" />
+    <Compile Include="Xsl\Qil\QilChoice.cs" />
+    <Compile Include="Xsl\Qil\QilCloneVisitor.cs" />
+    <Compile Include="Xsl\Qil\QilDataSource.cs" />
+    <Compile Include="Xsl\Qil\QilDepthChecker.cs" />
+    <Compile Include="Xsl\Qil\QilExpression.cs" />
+    <Compile Include="Xsl\Qil\QilFactory.cs" />
+    <Compile Include="Xsl\Qil\QilFunction.cs" />
+    <Compile Include="Xsl\Qil\QilInvoke.cs" />
+    <Compile Include="Xsl\Qil\QilInvokeEarlyBound.cs" />
+    <Compile Include="Xsl\Qil\QilInvokeLateBound.cs" />
+    <Compile Include="Xsl\Qil\QilIterator.cs" />
+    <Compile Include="Xsl\Qil\QilList.cs" />
+    <Compile Include="Xsl\Qil\QilLiteral.cs" />
+    <Compile Include="Xsl\Qil\QilLoop.cs" />
+    <Compile Include="Xsl\Qil\QilName.cs" />
+    <Compile Include="Xsl\Qil\QilNode.cs" />
+    <Compile Include="Xsl\Qil\QilNodeType.cs" />
+    <Compile Include="Xsl\Qil\QilParameter.cs" />
+    <Compile Include="Xsl\Qil\QilPatternFactory.cs" />
+    <Compile Include="Xsl\Qil\QilPatternVisitor.cs" />
+    <Compile Include="Xsl\Qil\QilReference.cs" />
+    <Compile Include="Xsl\Qil\QilReplaceVisitor.cs" />
+    <Compile Include="Xsl\Qil\QilScopedVisitor.cs" />
+    <Compile Include="Xsl\Qil\QilSortKey.cs" />
+    <Compile Include="Xsl\Qil\QilStrConcat.cs" />
+    <Compile Include="Xsl\Qil\QilTargetType.cs" />
+    <Compile Include="Xsl\Qil\QilTernary.cs" />
+    <Compile Include="Xsl\Qil\QilTypeChecker.cs" />
+    <Compile Include="Xsl\Qil\QilUnary.cs" />
+    <Compile Include="Xsl\Qil\QilValidationVisitor.cs" />
+    <Compile Include="Xsl\Qil\QilVisitor.cs" />
+    <Compile Include="Xsl\Qil\QilXmlReader.cs" />
+    <Compile Include="Xsl\Qil\QilXmlWriter.cs" />
+    <Compile Include="Xsl\Qil\SerializationHints.cs" />
+    <Compile Include="Xsl\Qil\SubstitutionList.cs" />
+    <Compile Include="Xsl\Qil\WhitespaceRule.cs" />
+    <Compile Include="Xsl\QueryReaderSettings.cs" />
+    <Compile Include="Xsl\Runtime\AncestorDocOrderIterator.cs" />
+    <Compile Include="Xsl\Runtime\AncestorIterator.cs" />
+    <Compile Include="Xsl\Runtime\AttributeContentIterator.cs" />
+    <Compile Include="Xsl\Runtime\AttributeIterator.cs" />
+    <Compile Include="Xsl\Runtime\CharUtil.cs" />
+    <Compile Include="Xsl\Runtime\ContentIterator.cs" />
+    <Compile Include="Xsl\Runtime\ContentMergeIterator.cs" />
+    <Compile Include="Xsl\Runtime\DecimalAggregator.cs" />
+    <Compile Include="Xsl\Runtime\DecimalFormat.cs" />
+    <Compile Include="Xsl\Runtime\DecimalFormatter.cs" />
+    <Compile Include="Xsl\Runtime\DescendantIterator.cs" />
+    <Compile Include="Xsl\Runtime\DescendantMergeIterator.cs" />
+    <Compile Include="Xsl\Runtime\DifferenceIterator.cs" />
+    <Compile Include="Xsl\Runtime\DocumentOrderComparer.cs" />
+    <Compile Include="Xsl\Runtime\DodSequenceMerge.cs" />
+    <Compile Include="Xsl\Runtime\DoubleAggregator.cs" />
+    <Compile Include="Xsl\Runtime\EarlyBoundInfo.cs" />
+    <Compile Include="Xsl\Runtime\ElementContentIterator.cs" />
+    <Compile Include="Xsl\Runtime\FollowingSiblingIterator.cs" />
+    <Compile Include="Xsl\Runtime\FollowingSiblingMergeIterator.cs" />
+    <Compile Include="Xsl\Runtime\IdIterator.cs" />
+    <Compile Include="Xsl\Runtime\Int32Aggregator.cs" />
+    <Compile Include="Xsl\Runtime\Int64Aggregator.cs" />
+    <Compile Include="Xsl\Runtime\IntersectIterator.cs" />
+    <Compile Include="Xsl\Runtime\IteratorResult.cs" />
+    <Compile Include="Xsl\Runtime\NamespaceIterator.cs" />
+    <Compile Include="Xsl\Runtime\NavigatorConstructor.cs" />
+    <Compile Include="Xsl\Runtime\NodeKindContentIterator.cs" />
+    <Compile Include="Xsl\Runtime\NodeRangeIterator.cs" />
+    <Compile Include="Xsl\Runtime\NumberFormatter.cs" />
+    <Compile Include="Xsl\Runtime\NumberFormatterBase.cs" />
+    <Compile Include="Xsl\Runtime\NumberingSequence.cs" />
+    <Compile Include="Xsl\Runtime\ParentIterator.cs" />
+    <Compile Include="Xsl\Runtime\PrecedingIterator.cs" />
+    <Compile Include="Xsl\Runtime\PrecedingSiblingDocOrderIterator.cs" />
+    <Compile Include="Xsl\Runtime\PrecedingSiblingIterator.cs" />
+    <Compile Include="Xsl\Runtime\RtfNavigator.cs" />
+    <Compile Include="Xsl\Runtime\RtfTextNavigator.cs" />
+    <Compile Include="Xsl\Runtime\RtfTreeNavigator.cs" />
+    <Compile Include="Xsl\Runtime\SetIteratorResult.cs" />
+    <Compile Include="Xsl\Runtime\StringConcat.cs" />
+    <Compile Include="Xsl\Runtime\TokenInfo.cs" />
+    <Compile Include="Xsl\Runtime\UnionIterator.cs" />
+    <Compile Include="Xsl\Runtime\WhitespaceRuleLookup.cs" />
+    <Compile Include="Xsl\Runtime\WhitespaceRuleReader.cs" />
+    <Compile Include="Xsl\Runtime\XmlAttributeCache.cs" />
+    <Compile Include="Xsl\Runtime\XmlCachedSequenceWriter.cs" />
+    <Compile Include="Xsl\Runtime\XmlCollation.cs" />
+    <Compile Include="Xsl\Runtime\XmlDateTimeSortKey.cs" />
+    <Compile Include="Xsl\Runtime\XmlDecimalSortKey.cs" />
+    <Compile Include="Xsl\Runtime\XmlDoubleSortKey.cs" />
+    <Compile Include="Xsl\Runtime\XmlEmptySortKey.cs" />
+    <Compile Include="Xsl\Runtime\XmlExtensionFunction.cs" />
+    <Compile Include="Xsl\Runtime\XmlExtensionFunctionTable.cs" />
+    <Compile Include="Xsl\Runtime\XmlILIndex.cs" />
+    <Compile Include="Xsl\Runtime\XmlILQueryEventArgs.cs" />
+    <Compile Include="Xsl\Runtime\XmlILStorageConverter.cs" />
+    <Compile Include="Xsl\Runtime\XmlIntegerSortKey.cs" />
+    <Compile Include="Xsl\Runtime\XmlIntSortKey.cs" />
+    <Compile Include="Xsl\Runtime\XmlMergeSequenceWriter.cs" />
+    <Compile Include="Xsl\Runtime\XmlNavAttrFilter.cs" />
+    <Compile Include="Xsl\Runtime\XmlNavigatorFilter.cs" />
+    <Compile Include="Xsl\Runtime\XmlNavigatorStack.cs" />
+    <Compile Include="Xsl\Runtime\XmlNavNameFilter.cs" />
+    <Compile Include="Xsl\Runtime\XmlNavNeverFilter.cs" />
+    <Compile Include="Xsl\Runtime\XmlNavTypeFilter.cs" />
+    <Compile Include="Xsl\Runtime\XmlQueryContext.cs" />
+    <Compile Include="Xsl\Runtime\XmlQueryDataReader.cs" />
+    <Compile Include="Xsl\Runtime\XmlQueryDataWriter.cs" />
+    <Compile Include="Xsl\Runtime\XmlQueryItemSequence.cs" />
+    <Compile Include="Xsl\Runtime\XmlQueryNodeSequence.cs" />
+    <Compile Include="Xsl\Runtime\XmlQueryOutput.cs" />
+    <Compile Include="Xsl\Runtime\XmlQueryRuntime.cs" />
+    <Compile Include="Xsl\Runtime\XmlQuerySequence.cs" />
+    <Compile Include="Xsl\Runtime\XmlQueryStaticData.cs" />
+    <Compile Include="Xsl\Runtime\XmlRawWriterWrapper.cs" />
+    <Compile Include="Xsl\Runtime\XmlSequenceWriter.cs" />
+    <Compile Include="Xsl\Runtime\XmlSortKey.cs" />
+    <Compile Include="Xsl\Runtime\XmlSortKeyAccumulator.cs" />
+    <Compile Include="Xsl\Runtime\XmlState.cs" />
+    <Compile Include="Xsl\Runtime\XmlStringSortKey.cs" />
+    <Compile Include="Xsl\Runtime\XPathFollowingIterator.cs" />
+    <Compile Include="Xsl\Runtime\XPathFollowingMergeIterator.cs" />
+    <Compile Include="Xsl\Runtime\XPathPrecedingDocOrderIterator.cs" />
+    <Compile Include="Xsl\Runtime\XPathPrecedingIterator.cs" />
+    <Compile Include="Xsl\Runtime\XPathPrecedingMergeIterator.cs" />
+    <Compile Include="Xsl\Runtime\XsltConvert.cs" />
+    <Compile Include="Xsl\Runtime\XsltFunctions.cs" />
+    <Compile Include="Xsl\Runtime\XsltLibrary.cs" />
+    <Compile Include="Xsl\Runtime\XsltMethods.cs" />
+    <Compile Include="Xsl\SourceLineInfo.cs" />
+    <Compile Include="Xsl\StringPair.cs" />
+    <Compile Include="Xsl\XmlCommand.cs" />
+    <Compile Include="Xsl\XmlILCommand.cs" />
+    <Compile Include="Xsl\XmlILGenerator.cs" />
+    <Compile Include="Xsl\XmlNodeKindFlags.cs" />
+    <Compile Include="Xsl\XmlQualifiedNameTest.cs" />
+    <Compile Include="Xsl\XmlQueryCardinality.cs" />
+    <Compile Include="Xsl\XmlQueryType.cs" />
+    <Compile Include="Xsl\XmlQueryTypeFactory.cs" />
+    <Compile Include="Xsl\XPathConvert.cs" />
+    <Compile Include="Xsl\XPath\IFocus.cs" />
+    <Compile Include="Xsl\XPath\IXPathBuilder.cs" />
+    <Compile Include="Xsl\XPath\IXPathEnvironment.cs" />
+    <Compile Include="Xsl\XPath\LexKind.cs" />
+    <Compile Include="Xsl\XPath\XPathAxis.cs" />
+    <Compile Include="Xsl\XPath\XPathBuilder.cs" />
+    <Compile Include="Xsl\XPath\XPathCompileException.cs" />
+    <Compile Include="Xsl\XPath\XPathOperator.cs" />
+    <Compile Include="Xsl\XPath\XPathParser.cs" />
+    <Compile Include="Xsl\XPath\XPathQilFactory.cs" />
+    <Compile Include="Xsl\XPath\XPathScanner.cs" />
+    <Compile Include="Xsl\XslFlags.cs" />
+    <Compile Include="Xsl\XslLoadException.cs" />
+    <Compile Include="Xsl\XsltOld\Action.cs" />
+    <Compile Include="Xsl\XsltOld\ActionFrame.cs" />
+    <Compile Include="Xsl\XsltOld\ApplyImportsAction.cs" />
+    <Compile Include="Xsl\XsltOld\ApplyTemplatesAction.cs" />
+    <Compile Include="Xsl\XsltOld\AttributeAction.cs" />
+    <Compile Include="Xsl\XsltOld\AttributeSetAction.cs" />
+    <Compile Include="Xsl\XsltOld\Avt.cs" />
+    <Compile Include="Xsl\XsltOld\AvtEvent.cs" />
+    <Compile Include="Xsl\XsltOld\BeginEvent.cs" />
+    <Compile Include="Xsl\XsltOld\BuilderInfo.cs" />
+    <Compile Include="Xsl\XsltOld\BuiltInRuleTextAction.cs" />
+    <Compile Include="Xsl\XsltOld\CallTemplateAction.cs" />
+    <Compile Include="Xsl\XsltOld\ChooseAction.cs" />
+    <Compile Include="Xsl\XsltOld\CommentAction.cs" />
+    <Compile Include="Xsl\XsltOld\CompiledAction.cs" />
+    <Compile Include="Xsl\XsltOld\Compiler.cs" />
+    <Compile Include="Xsl\XsltOld\ContainerAction.cs" />
+    <Compile Include="Xsl\XsltOld\CopyAction.cs" />
+    <Compile Include="Xsl\XsltOld\CopyAttributesAction.cs" />
+    <Compile Include="Xsl\XsltOld\CopyCodeAction.cs" />
+    <Compile Include="Xsl\XsltOld\CopyNamespacesAction.cs" />
+    <Compile Include="Xsl\XsltOld\CopyNodeSetAction.cs" />
+    <Compile Include="Xsl\XsltOld\CopyOfAction.cs" />
+    <Compile Include="Xsl\XsltOld\DbgCompiler.cs" />
+    <Compile Include="Xsl\XsltOld\DbgData.cs" />
+    <Compile Include="Xsl\XsltOld\Debugger\IStackFrame.cs" />
+    <Compile Include="Xsl\XsltOld\Debugger\IXsltDebugger.cs" />
+    <Compile Include="Xsl\XsltOld\Debugger\IXsltProcessor.cs" />
+    <Compile Include="Xsl\XsltOld\DocumentKeyList.cs" />
+    <Compile Include="Xsl\XsltOld\DocumentScope.cs" />
+    <Compile Include="Xsl\XsltOld\ElementAction.cs" />
+    <Compile Include="Xsl\XsltOld\EndEvent.cs" />
+    <Compile Include="Xsl\XsltOld\Event.cs" />
+    <Compile Include="Xsl\XsltOld\ForEachAction.cs" />
+    <Compile Include="Xsl\XsltOld\HtmlAttributeProps.cs" />
+    <Compile Include="Xsl\XsltOld\HtmlElementProps.cs" />
+    <Compile Include="Xsl\XsltOld\IfAction.cs" />
+    <Compile Include="Xsl\XsltOld\InputScope.cs" />
+    <Compile Include="Xsl\XsltOld\InputScopeManager.cs" />
+    <Compile Include="Xsl\XsltOld\Key.cs" />
+    <Compile Include="Xsl\XsltOld\Keywords.cs" />
+    <Compile Include="Xsl\XsltOld\MessageAction.cs" />
+    <Compile Include="Xsl\XsltOld\NamespaceDecl.cs" />
+    <Compile Include="Xsl\XsltOld\NamespaceEvent.cs" />
+    <Compile Include="Xsl\XsltOld\NamespaceInfo.cs" />
+    <Compile Include="Xsl\XsltOld\NavigatorInput.cs" />
+    <Compile Include="Xsl\XsltOld\NavigatorOutput.cs" />
+    <Compile Include="Xsl\XsltOld\NewInstructionAction.cs" />
+    <Compile Include="Xsl\XsltOld\NumberAction.cs" />
+    <Compile Include="Xsl\XsltOld\OutKeywords.cs" />
+    <Compile Include="Xsl\XsltOld\OutputScope.cs" />
+    <Compile Include="Xsl\XsltOld\OutputScopeManager.cs" />
+    <Compile Include="Xsl\XsltOld\PrefixQName.cs" />
+    <Compile Include="Xsl\XsltOld\ProcessingInstructionAction.cs" />
+    <Compile Include="Xsl\XsltOld\Processor.cs" />
+    <Compile Include="Xsl\XsltOld\ReaderOutput.cs" />
+    <Compile Include="Xsl\XsltOld\RecordBuilder.cs" />
+    <Compile Include="Xsl\XsltOld\RecordOutput.cs" />
+    <Compile Include="Xsl\XsltOld\RootAction.cs" />
+    <Compile Include="Xsl\XsltOld\ScriptingLanguage.cs" />
+    <Compile Include="Xsl\XsltOld\SequentialOutput.cs" />
+    <Compile Include="Xsl\XsltOld\Sort.cs" />
+    <Compile Include="Xsl\XsltOld\SortAction.cs" />
+    <Compile Include="Xsl\XsltOld\StateMachine.cs" />
+    <Compile Include="Xsl\XsltOld\StringOutput.cs" />
+    <Compile Include="Xsl\XsltOld\Stylesheet.cs" />
+    <Compile Include="Xsl\XsltOld\TemplateAction.cs" />
+    <Compile Include="Xsl\XsltOld\TemplateBaseAction.cs" />
+    <Compile Include="Xsl\XsltOld\TemplateLookupAction.cs" />
+    <Compile Include="Xsl\XsltOld\TemplateLookupActionDbg.cs" />
+    <Compile Include="Xsl\XsltOld\TemplateManager.cs" />
+    <Compile Include="Xsl\XsltOld\TextAction.cs" />
+    <Compile Include="Xsl\XsltOld\TextEvent.cs" />
+    <Compile Include="Xsl\XsltOld\TextOnlyOutput.cs" />
+    <Compile Include="Xsl\XsltOld\TextOutput.cs" />
+    <Compile Include="Xsl\XsltOld\TheQuery.cs" />
+    <Compile Include="Xsl\XsltOld\UseAttributeSetsAction.cs" />
+    <Compile Include="Xsl\XsltOld\ValueOfAction.cs" />
+    <Compile Include="Xsl\XsltOld\VariableAction.cs" />
+    <Compile Include="Xsl\XsltOld\VariableType.cs" />
+    <Compile Include="Xsl\XsltOld\WithParamAction.cs" />
+    <Compile Include="Xsl\XsltOld\WriterOutput.cs" />
+    <Compile Include="Xsl\XsltOld\XsltCompileContext.cs" />
+    <Compile Include="Xsl\XsltOld\XsltOutput.cs" />
+    <Compile Include="Xsl\XslTransformException.cs" />
+    <Compile Include="Xsl\Xslt\AstFactory.cs" />
+    <Compile Include="Xsl\Xslt\AttributeSet.cs" />
+    <Compile Include="Xsl\Xslt\Compiler.cs" />
+    <Compile Include="Xsl\Xslt\CompilerScopeManager.cs" />
+    <Compile Include="Xsl\Xslt\CycleCheck.cs" />
+    <Compile Include="Xsl\Xslt\DecimalFormatDecl.cs" />
+    <Compile Include="Xsl\Xslt\DecimalFormats.cs" />
+    <Compile Include="Xsl\Xslt\FunctionFocus.cs" />
+    <Compile Include="Xsl\Xslt\InvokeGenerator.cs" />
+    <Compile Include="Xsl\Xslt\Key.cs" />
+    <Compile Include="Xsl\Xslt\KeyMatchBuilder.cs" />
+    <Compile Include="Xsl\Xslt\Keys.cs" />
+    <Compile Include="Xsl\Xslt\KeywordsTable.cs" />
+    <Compile Include="Xsl\Xslt\LoopFocus.cs" />
+    <Compile Include="Xsl\Xslt\MatcherBuilder.cs" />
+    <Compile Include="Xsl\Xslt\NodeCtor.cs" />
+    <Compile Include="Xsl\Xslt\NsAlias.cs" />
+    <Compile Include="Xsl\Xslt\NsDecl.cs" />
+    <Compile Include="Xsl\Xslt\Number.cs" />
+    <Compile Include="Xsl\Xslt\NumberLevel.cs" />
+    <Compile Include="Xsl\Xslt\Output.cs" />
+    <Compile Include="Xsl\Xslt\OutputScopeManager.cs" />
+    <Compile Include="Xsl\Xslt\Pattern.cs" />
+    <Compile Include="Xsl\Xslt\PatternBag.cs" />
+    <Compile Include="Xsl\Xslt\ProtoTemplate.cs" />
+    <Compile Include="Xsl\Xslt\QilGenerator.cs" />
+    <Compile Include="Xsl\Xslt\QilStrConcatenator.cs" />
+    <Compile Include="Xsl\Xslt\ReferenceReplacer.cs" />
+    <Compile Include="Xsl\Xslt\ScriptClass.cs" />
+    <Compile Include="Xsl\Xslt\Scripts.cs" />
+    <Compile Include="Xsl\Xslt\SingletonFocus.cs" />
+    <Compile Include="Xsl\Xslt\SingletonFocusType.cs" />
+    <Compile Include="Xsl\Xslt\Sort.cs" />
+    <Compile Include="Xsl\Xslt\Stylesheet.cs" />
+    <Compile Include="Xsl\Xslt\Template.cs" />
+    <Compile Include="Xsl\Xslt\TemplateMatch.cs" />
+    <Compile Include="Xsl\Xslt\Text.cs" />
+    <Compile Include="Xsl\Xslt\VarPar.cs" />
+    <Compile Include="Xsl\Xslt\XPathPatternBuilder.cs" />
+    <Compile Include="Xsl\Xslt\XPathPatternParser.cs" />
+    <Compile Include="Xsl\Xslt\XslAstAnalyzer.cs" />
+    <Compile Include="Xsl\Xslt\XslNode.cs" />
+    <Compile Include="Xsl\Xslt\XslNodeEx.cs" />
+    <Compile Include="Xsl\Xslt\XslNodeType.cs" />
+    <Compile Include="Xsl\Xslt\XsltInput.cs" />
+    <Compile Include="Xsl\Xslt\XsltLoader.cs" />
+    <Compile Include="Xsl\Xslt\XsltQilFactory.cs" />
+    <Compile Include="Xsl\Xslt\XslVersion.cs" />
+    <Compile Include="Xsl\Xslt\XslVisitor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Utils\resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60D8ED3B-E6C1-4D8D-B059-9E46289F214C}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Xml\System.Xml.csproj">
+      <Project>{60D8ED3B-E6C1-4D8D-B059-9E46289F2155}</Project>
+      <Name>System.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{60D8ED3B-E6C1-4D8D-B059-9E46289F2156}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

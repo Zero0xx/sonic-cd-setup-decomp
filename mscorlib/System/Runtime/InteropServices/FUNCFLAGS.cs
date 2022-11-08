@@ -1,0 +1,38 @@
+﻿using System;
+
+namespace System.Runtime.InteropServices
+{
+	// Token: 0x02000560 RID: 1376
+	[Flags]
+	[Obsolete("Use System.Runtime.InteropServices.ComTypes.FUNCFLAGS instead. http://go.microsoft.com/fwlink/?linkid=14202", false)]
+	[Serializable]
+	public enum FUNCFLAGS : short
+	{
+		// Token: 0x04001AE4 RID: 6884
+		FUNCFLAG_FRESTRICTED = 1,
+		// Token: 0x04001AE5 RID: 6885
+		FUNCFLAG_FSOURCE = 2,
+		// Token: 0x04001AE6 RID: 6886
+		FUNCFLAG_FBINDABLE = 4,
+		// Token: 0x04001AE7 RID: 6887
+		FUNCFLAG_FREQUESTEDIT = 8,
+		// Token: 0x04001AE8 RID: 6888
+		FUNCFLAG_FDISPLAYBIND = 16,
+		// Token: 0x04001AE9 RID: 6889
+		FUNCFLAG_FDEFAULTBIND = 32,
+		// Token: 0x04001AEA RID: 6890
+		FUNCFLAG_FHIDDEN = 64,
+		// Token: 0x04001AEB RID: 6891
+		FUNCFLAG_FUSESGETLASTERROR = 128,
+		// Token: 0x04001AEC RID: 6892
+		FUNCFLAG_FDEFAULTCOLLELEM = 256,
+		// Token: 0x04001AED RID: 6893
+		FUNCFLAG_FUIDEFAULT = 512,
+		// Token: 0x04001AEE RID: 6894
+		FUNCFLAG_FNONBROWSABLE = 1024,
+		// Token: 0x04001AEF RID: 6895
+		FUNCFLAG_FREPLACEABLE = 2048,
+		// Token: 0x04001AF0 RID: 6896
+		FUNCFLAG_FIMMEDIATEBIND = 4096
+	}
+}

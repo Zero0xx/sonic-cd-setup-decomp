@@ -1,0 +1,125 @@
+﻿using System;
+
+namespace Microsoft.DirectX.Direct3D
+{
+	// Token: 0x02000020 RID: 32
+	public enum Format
+	{
+		// Token: 0x04000C80 RID: 3200
+		D24SingleS8 = 83,
+		// Token: 0x04000C81 RID: 3201
+		D32SingleLockable = 82,
+		// Token: 0x04000C82 RID: 3202
+		D24X4S4 = 79,
+		// Token: 0x04000C83 RID: 3203
+		D24X8 = 77,
+		// Token: 0x04000C84 RID: 3204
+		L16 = 81,
+		// Token: 0x04000C85 RID: 3205
+		D16 = 80,
+		// Token: 0x04000C86 RID: 3206
+		D24S8 = 75,
+		// Token: 0x04000C87 RID: 3207
+		D15S1 = 73,
+		// Token: 0x04000C88 RID: 3208
+		D32 = 71,
+		// Token: 0x04000C89 RID: 3209
+		D16Lockable = 70,
+		// Token: 0x04000C8A RID: 3210
+		G8R8G8B8 = 1111970375,
+		// Token: 0x04000C8B RID: 3211
+		R8G8B8G8 = 1195525970,
+		// Token: 0x04000C8C RID: 3212
+		CxV8U8 = 117,
+		// Token: 0x04000C8D RID: 3213
+		A32B32G32R32F = 116,
+		// Token: 0x04000C8E RID: 3214
+		G32R32F = 115,
+		// Token: 0x04000C8F RID: 3215
+		R32F = 114,
+		// Token: 0x04000C90 RID: 3216
+		A16B16G16R16F = 113,
+		// Token: 0x04000C91 RID: 3217
+		G16R16F = 112,
+		// Token: 0x04000C92 RID: 3218
+		R16F = 111,
+		// Token: 0x04000C93 RID: 3219
+		Multi2Argb8 = 827606349,
+		// Token: 0x04000C94 RID: 3220
+		Q16W16V16U16 = 110,
+		// Token: 0x04000C95 RID: 3221
+		VertexData = 100,
+		// Token: 0x04000C96 RID: 3222
+		Dxt5 = 894720068,
+		// Token: 0x04000C97 RID: 3223
+		Dxt4 = 877942852,
+		// Token: 0x04000C98 RID: 3224
+		Dxt3 = 861165636,
+		// Token: 0x04000C99 RID: 3225
+		Dxt2 = 844388420,
+		// Token: 0x04000C9A RID: 3226
+		Dxt1 = 827611204,
+		// Token: 0x04000C9B RID: 3227
+		Yuy2 = 844715353,
+		// Token: 0x04000C9C RID: 3228
+		Uyvy = 1498831189,
+		// Token: 0x04000C9D RID: 3229
+		A2W10V10U10 = 67,
+		// Token: 0x04000C9E RID: 3230
+		V16U16 = 64,
+		// Token: 0x04000C9F RID: 3231
+		Q8W8V8U8 = 63,
+		// Token: 0x04000CA0 RID: 3232
+		X8L8V8U8 = 62,
+		// Token: 0x04000CA1 RID: 3233
+		L6V5U5 = 61,
+		// Token: 0x04000CA2 RID: 3234
+		V8U8 = 60,
+		// Token: 0x04000CA3 RID: 3235
+		A4L4 = 52,
+		// Token: 0x04000CA4 RID: 3236
+		A8L8 = 51,
+		// Token: 0x04000CA5 RID: 3237
+		L8 = 50,
+		// Token: 0x04000CA6 RID: 3238
+		P8 = 41,
+		// Token: 0x04000CA7 RID: 3239
+		A8P8 = 40,
+		// Token: 0x04000CA8 RID: 3240
+		A16B16G16R16 = 36,
+		// Token: 0x04000CA9 RID: 3241
+		A2R10G10B10 = 35,
+		// Token: 0x04000CAA RID: 3242
+		G16R16 = 34,
+		// Token: 0x04000CAB RID: 3243
+		X8B8G8R8 = 33,
+		// Token: 0x04000CAC RID: 3244
+		A8B8G8R8 = 32,
+		// Token: 0x04000CAD RID: 3245
+		A2B10G10R10 = 31,
+		// Token: 0x04000CAE RID: 3246
+		X4R4G4B4 = 30,
+		// Token: 0x04000CAF RID: 3247
+		A8R3G3B2 = 29,
+		// Token: 0x04000CB0 RID: 3248
+		A8 = 28,
+		// Token: 0x04000CB1 RID: 3249
+		R3G3B2 = 27,
+		// Token: 0x04000CB2 RID: 3250
+		A4R4G4B4 = 26,
+		// Token: 0x04000CB3 RID: 3251
+		A1R5G5B5 = 25,
+		// Token: 0x04000CB4 RID: 3252
+		X1R5G5B5 = 24,
+		// Token: 0x04000CB5 RID: 3253
+		R5G6B5 = 23,
+		// Token: 0x04000CB6 RID: 3254
+		X8R8G8B8 = 22,
+		// Token: 0x04000CB7 RID: 3255
+		A8R8G8B8 = 21,
+		// Token: 0x04000CB8 RID: 3256
+		R8G8B8 = 20,
+		// Token: 0x04000CB9 RID: 3257
+		Unknown = 0
+	}
+}

@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60D8ED3B-E6C1-4D8D-B059-9E46289F2150}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Deployment</RootNamespace>
+    <AssemblyName>System.Deployment</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\ActivationDescription.cs" />
+    <Compile Include="Application\ActivationType.cs" />
+    <Compile Include="Application\ApplicationActivator.cs" />
+    <Compile Include="Application\ApplicationDeployment.cs" />
+    <Compile Include="Application\ApplicationTrust.cs" />
+    <Compile Include="Application\AppType.cs" />
+    <Compile Include="Application\AssemblyIdentityItems.cs" />
+    <Compile Include="Application\ASSEMBLYMETADATA.cs" />
+    <Compile Include="Application\AssemblyMetaDataImport.cs" />
+    <Compile Include="Application\AssemblyModule.cs" />
+    <Compile Include="Application\AssemblyReference.cs" />
+    <Compile Include="Application\Base32String.cs" />
+    <Compile Include="Application\BindCompletedEventArgs.cs" />
+    <Compile Include="Application\BindCompletedEventHandler.cs" />
+    <Compile Include="Application\CheckForUpdateCompletedEventArgs.cs" />
+    <Compile Include="Application\CheckForUpdateCompletedEventHandler.cs" />
+    <Compile Include="Application\CodeMarker_Singleton.cs" />
+    <Compile Include="Application\CommitApplicationParams.cs" />
+    <Compile Include="Application\ComponentStore.cs" />
+    <Compile Include="Application\ComponentStoreType.cs" />
+    <Compile Include="Application\ComponentVerifier.cs" />
+    <Compile Include="Application\Constants.cs" />
+    <Compile Include="Application\CorAssemblyFlags.cs" />
+    <Compile Include="Application\CorMetaDataDispenser.cs" />
+    <Compile Include="Application\DefinitionAppId.cs" />
+    <Compile Include="Application\DefinitionIdentity.cs" />
+    <Compile Include="Application\DependentPlatformMissingException.cs" />
+    <Compile Include="Application\DeploymentDownloadException.cs" />
+    <Compile Include="Application\DeploymentException.cs" />
+    <Compile Include="Application\DeploymentManager.cs" />
+    <Compile Include="Application\DeploymentProgressChangedEventArgs.cs" />
+    <Compile Include="Application\DeploymentProgressChangedEventHandler.cs" />
+    <Compile Include="Application\DeploymentProgressState.cs" />
+    <Compile Include="Application\DeploymentServiceCom.cs" />
+    <Compile Include="Application\DeploymentServiceComWrapper.cs" />
+    <Compile Include="Application\DFServiceEntryPoint.cs" />
+    <Compile Include="Application\DisposableBase.cs" />
+    <Compile Include="Application\DownloadApplicationCompletedEventArgs.cs" />
+    <Compile Include="Application\DownloadCancelledException.cs" />
+    <Compile Include="Application\DownloadEventArgs.cs" />
+    <Compile Include="Application\DownloadFileGroupCompletedEventArgs.cs" />
+    <Compile Include="Application\DownloadFileGroupCompletedEventHandler.cs" />
+    <Compile Include="Application\DownloadManager.cs" />
+    <Compile Include="Application\DownloadOptions.cs" />
+    <Compile Include="Application\DownloadProgressChangedEventArgs.cs" />
+    <Compile Include="Application\DownloadResult.cs" />
+    <Compile Include="Application\ErrorPiece.cs" />
+    <Compile Include="Application\ExceptionTypes.cs" />
+    <Compile Include="Application\FileDownloader.cs" />
+    <Compile Include="Application\FormPiece.cs" />
+    <Compile Include="Application\GetManifestCompletedEventArgs.cs" />
+    <Compile Include="Application\Hash.cs" />
+    <Compile Include="Application\HashCollection.cs" />
+    <Compile Include="Application\HexString.cs" />
+    <Compile Include="Application\IDownloadNotification.cs" />
+    <Compile Include="Application\IManagedDeploymentServiceCom.cs" />
+    <Compile Include="Application\IMetaDataAssemblyImport.cs" />
+    <Compile Include="Application\IMetaDataDispenser.cs" />
+    <Compile Include="Application\IMetaDataImport.cs" />
+    <Compile Include="Application\InPlaceHostingManager.cs" />
+    <Compile Include="Application\InvalidDeploymentException.cs" />
+    <Compile Include="Application\LifetimeManager.cs" />
+    <Compile Include="Application\LockedFile.cs" />
+    <Compile Include="Application\Logger.cs" />
+    <Compile Include="Application\MaintenanceFlags.cs" />
+    <Compile Include="Application\MaintenanceInfo.cs" />
+    <Compile Include="Application\MaintenancePiece.cs" />
+    <Compile Include="Application\ManifestGenerator.cs" />
+    <Compile Include="Application\ManifestReader.cs" />
+    <Compile Include="Application\ManifestValidatingReader.cs" />
+    <Compile Include="Application\Manifest\AssemblyManifest.cs" />
+    <Compile Include="Application\Manifest\DependentAssembly.cs" />
+    <Compile Include="Application\Manifest\DependentOS.cs" />
+    <Compile Include="Application\Manifest\Deployment.cs" />
+    <Compile Include="Application\Manifest\DeploymentUpdate.cs" />
+    <Compile Include="Application\Manifest\Description.cs" />
+    <Compile Include="Application\Manifest\EntryPoint.cs" />
+    <Compile Include="Application\Manifest\File.cs" />
+    <Compile Include="Application\Manifest\FileAssociation.cs" />
+    <Compile Include="Application\Manifest\hashAlgorithmType.cs" />
+    <Compile Include="Application\Manifest\ManifestSourceFormat.cs" />
+    <Compile Include="Application\Manifest\timeUnitType.cs" />
+    <Compile Include="Application\ModalPiece.cs" />
+    <Compile Include="Application\NativeMethods.cs" />
+    <Compile Include="Application\PathHelper.cs" />
+    <Compile Include="Application\PathTwiddler.cs" />
+    <Compile Include="Application\PEStream.cs" />
+    <Compile Include="Application\PlatformDetector.cs" />
+    <Compile Include="Application\PlatformPiece.cs" />
+    <Compile Include="Application\PlatformSpecific.cs" />
+    <Compile Include="Application\PolicyKeys.cs" />
+    <Compile Include="Application\ProgressPiece.cs" />
+    <Compile Include="Application\ReferenceIdentity.cs" />
+    <Compile Include="Application\Resources.cs" />
+    <Compile Include="Application\ServerInformation.cs" />
+    <Compile Include="Application\ShellExposure.cs" />
+    <Compile Include="Application\SplashInfo.cs" />
+    <Compile Include="Application\SplashPiece.cs" />
+    <Compile Include="Application\SubscriptionState.cs" />
+    <Compile Include="Application\SubscriptionStateInternal.cs" />
+    <Compile Include="Application\SubscriptionStateVariable.cs" />
+    <Compile Include="Application\SubscriptionStore.cs" />
+    <Compile Include="Application\SyncGroupHelper.cs" />
+    <Compile Include="Application\SynchronizeCompletedEventArgs.cs" />
+    <Compile Include="Application\SynchronizeCompletedEventHandler.cs" />
+    <Compile Include="Application\SystemNetDownloader.cs" />
+    <Compile Include="Application\TempDirectory.cs" />
+    <Compile Include="Application\TempFile.cs" />
+    <Compile Include="Application\TrustNotGrantedException.cs" />
+    <Compile Include="Application\TrustParams.cs" />
+    <Compile Include="Application\UpdateCheckInfo.cs" />
+    <Compile Include="Application\UpdatePiece.cs" />
+    <Compile Include="Application\UriHelper.cs" />
+    <Compile Include="Application\UserInterface.cs" />
+    <Compile Include="Application\UserInterfaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application\UserInterfaceForm.Designer.cs">
+      <DependentUpon>UserInterfaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application\UserInterfaceInfo.cs" />
+    <Compile Include="Application\UserInterfaceModalResult.cs" />
+    <Compile Include="Application\Utilities.cs" />
+    <Compile Include="Application\Win32InterOp\SystemUtils.cs" />
+    <Compile Include="Internal\CodeSigning\CmiAuthenticodeSignerInfo.cs" />
+    <Compile Include="Internal\CodeSigning\CmiAuthenticodeTimestamperInfo.cs" />
+    <Compile Include="Internal\CodeSigning\CmiManifestSigner.cs" />
+    <Compile Include="Internal\CodeSigning\CmiManifestSignerFlag.cs" />
+    <Compile Include="Internal\CodeSigning\CmiManifestVerifyFlags.cs" />
+    <Compile Include="Internal\CodeSigning\CmiStrongNameSignerInfo.cs" />
+    <Compile Include="Internal\CodeSigning\ManifestSignedXml.cs" />
+    <Compile Include="Internal\CodeSigning\SignedCmiManifest.cs" />
+    <Compile Include="Internal\CodeSigning\Win32.cs" />
+    <Compile Include="Internal\Isolation\ApplicationContext.cs" />
+    <Compile Include="Internal\Isolation\BLOB.cs" />
+    <Compile Include="Internal\Isolation\CATEGORY.cs" />
+    <Compile Include="Internal\Isolation\CATEGORY_INSTANCE.cs" />
+    <Compile Include="Internal\Isolation\CATEGORY_SUBCATEGORY.cs" />
+    <Compile Include="Internal\Isolation\DefinitionAppId.cs" />
+    <Compile Include="Internal\Isolation\DefinitionIdentity.cs" />
+    <Compile Include="Internal\Isolation\EnumDefinitionIdentity.cs" />
+    <Compile Include="Internal\Isolation\EnumReferenceIdentity.cs" />
+    <Compile Include="Internal\Isolation\IActContext.cs" />
+    <Compile Include="Internal\Isolation\IAppIdAuthority.cs" />
+    <Compile Include="Internal\Isolation\IAPPIDAUTHORITY_ARE_DEFINITIONS_EQUAL_FLAGS.cs" />
+    <Compile Include="Internal\Isolation\IAPPIDAUTHORITY_ARE_REFERENCES_EQUAL_FLAGS.cs" />
+    <Compile Include="Internal\Isolation\ICDF.cs" />
+    <Compile Include="Internal\Isolation\IDefinitionAppId.cs" />
+    <Compile Include="Internal\Isolation\IDefinitionIdentity.cs" />
+    <Compile Include="Internal\Isolation\IDENTITY_ATTRIBUTE.cs" />
+    <Compile Include="Internal\Isolation\IEnumDefinitionIdentity.cs" />
+    <Compile Include="Internal\Isolation\IEnumIDENTITY_ATTRIBUTE.cs" />
+    <Compile Include="Internal\Isolation\IEnumReferenceIdentity.cs" />
+    <Compile Include="Internal\Isolation\IEnumSTORE_ASSEMBLY.cs" />
+    <Compile Include="Internal\Isolation\IEnumSTORE_ASSEMBLY_FILE.cs" />
+    <Compile Include="Internal\Isolation\IEnumSTORE_ASSEMBLY_INSTALLATION_REFERENCE.cs" />
+    <Compile Include="Internal\Isolation\IEnumSTORE_CATEGORY.cs" />
+    <Compile Include="Internal\Isolation\IEnumSTORE_CATEGORY_INSTANCE.cs" />
+    <Compile Include="Internal\Isolation\IEnumSTORE_CATEGORY_SUBCATEGORY.cs" />
+    <Compile Include="Internal\Isolation\IEnumSTORE_DEPLOYMENT_METADATA.cs" />
+    <Compile Include="Internal\Isolation\IEnumSTORE_DEPLOYMENT_METADATA_PROPERTY.cs" />
+    <Compile Include="Internal\Isolation\IEnumUnknown.cs" />
+    <Compile Include="Internal\Isolation\IIdentityAuthority.cs" />
+    <Compile Include="Internal\Isolation\IIDENTITYAUTHORITY_DEFINITION_IDENTITY_TO_TEXT_FLAGS.cs" />
+    <Compile Include="Internal\Isolation\IIDENTITYAUTHORITY_DOES_DEFINITION_MATCH_REFERENCE_FLAGS.cs" />
+    <Compile Include="Internal\Isolation\IIDENTITYAUTHORITY_REFERENCE_IDENTITY_TO_TEXT_FLAGS.cs" />
+    <Compile Include="Internal\Isolation\IManifestInformation.cs" />
+    <Compile Include="Internal\Isolation\IManifestParseErrorCallback.cs" />
+    <Compile Include="Internal\Isolation\IReferenceAppId.cs" />
+    <Compile Include="Internal\Isolation\IReferenceIdentity.cs" />
+    <Compile Include="Internal\Isolation\ISection.cs" />
+    <Compile Include="Internal\Isolation\ISectionEntry.cs" />
+    <Compile Include="Internal\Isolation\ISectionWithReferenceIdentityKey.cs" />
+    <Compile Include="Internal\Isolation\ISectionWithStringKey.cs" />
+    <Compile Include="Internal\Isolation\IsolationInterop.cs" />
+    <Compile Include="Internal\Isolation\IStateManager.cs" />
+    <Compile Include="Internal\Isolation\IStore.cs" />
+    <Compile Include="Internal\Isolation\IStore_BindingResult.cs" />
+    <Compile Include="Internal\Isolation\IStore_BindingResult_BoundVersion.cs" />
+    <Compile Include="Internal\Isolation\ISTORE_BIND_REFERENCE_TO_ASSEMBLY_FLAGS.cs" />
+    <Compile Include="Internal\Isolation\ISTORE_ENUM_ASSEMBLIES_FLAGS.cs" />
+    <Compile Include="Internal\Isolation\ISTORE_ENUM_FILES_FLAGS.cs" />
+    <Compile Include="Internal\Isolation\Manifest\AssemblyReferenceDependentAssemblyEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\AssemblyReferenceDependentAssemblyEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\AssemblyReferenceEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\AssemblyReferenceEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\AssemblyRequestEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\AssemblyRequestEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CategoryMembershipDataEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CategoryMembershipDataEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CategoryMembershipEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CategoryMembershipEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CLRSurrogateEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CLRSurrogateEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMSSECTIONID.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_ASSEMBLY_DEPLOYMENT_FLAG.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_ASSEMBLY_REFERENCE_DEPENDENT_ASSEMBLY_FLAG.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_ASSEMBLY_REFERENCE_FLAG.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_COM_SERVER_FLAG.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_DIRECTORY_FLAG.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_ENTRY_POINT_FLAG.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_FILE_FLAG.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_FILE_HASH_ALGORITHM.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_FILE_WRITABLE_TYPE.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_HASH_DIGESTMETHOD.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_HASH_TRANSFORM.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_MANIFEST_FLAG.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_REGISTRY_KEY_FLAG.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_REGISTRY_VALUE_FLAG.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_REGISTRY_VALUE_HINT.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_REGISTRY_VALUE_TYPE.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_SCHEMA_VERSION.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_SYSTEM_PROTECTION.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_TIME_UNIT_TYPE.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CMS_USAGE_PATTERN.cs" />
+    <Compile Include="Internal\Isolation\Manifest\COMServerEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\COMServerEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CounterEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CounterEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CounterSetEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\CounterSetEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\DependentOSMetadataEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\DependentOSMetadataEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\DeploymentMetadataEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\DeploymentMetadataEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\DescriptionMetadataEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\DescriptionMetadataEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\DirectoryEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\DirectoryEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\EntryPointEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\EntryPointEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\EventEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\EventEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\EventMapEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\EventMapEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\EventTagEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\EventTagEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\FileAssociationEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\FileAssociationEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\FileEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\FileEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\HashElementEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\HashElementEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IAssemblyReferenceDependentAssemblyEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IAssemblyReferenceEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IAssemblyRequestEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\ICategoryMembershipDataEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\ICategoryMembershipEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\ICLRSurrogateEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\ICMS.cs" />
+    <Compile Include="Internal\Isolation\Manifest\ICOMServerEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\ICounterEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\ICounterSetEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IDependentOSMetadataEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IDeploymentMetadataEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IDescriptionMetadataEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IDirectoryEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IEntryPointEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IEventEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IEventMapEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IEventTagEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IFileAssociationEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IFileEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IHashElementEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IMetadataSectionEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IMuiResourceIdLookupMapEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IMuiResourceMapEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IMuiResourceTypeIdIntEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IMuiResourceTypeIdStringEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IPermissionSetEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IProgIdRedirectionEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IRegistryKeyEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IRegistryValueEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IResourceTableMappingEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\ISecurityDescriptorReferenceEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\ISubcategoryMembershipEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\IWindowClassEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\MetadataSectionEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\MetadataSectionEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\MuiResourceIdLookupMapEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\MuiResourceIdLookupMapEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\MuiResourceMapEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\MuiResourceMapEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\MuiResourceTypeIdIntEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\MuiResourceTypeIdIntEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\MuiResourceTypeIdStringEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\MuiResourceTypeIdStringEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\PermissionSetEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\PermissionSetEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\ProgIdRedirectionEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\ProgIdRedirectionEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\RegistryKeyEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\RegistryKeyEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\RegistryValueEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\RegistryValueEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\ResourceTableMappingEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\ResourceTableMappingEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\SecurityDescriptorReferenceEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\SecurityDescriptorReferenceEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\SubcategoryMembershipEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\SubcategoryMembershipEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\Manifest\WindowClassEntry.cs" />
+    <Compile Include="Internal\Isolation\Manifest\WindowClassEntryFieldId.cs" />
+    <Compile Include="Internal\Isolation\ReferenceAppId.cs" />
+    <Compile Include="Internal\Isolation\ReferenceIdentity.cs" />
+    <Compile Include="Internal\Isolation\StateManager_RunningState.cs" />
+    <Compile Include="Internal\Isolation\Store.cs" />
+    <Compile Include="Internal\Isolation\StoreApplicationReference.cs" />
+    <Compile Include="Internal\Isolation\StoreAssemblyEnumeration.cs" />
+    <Compile Include="Internal\Isolation\StoreAssemblyFileEnumeration.cs" />
+    <Compile Include="Internal\Isolation\StoreCategoryEnumeration.cs" />
+    <Compile Include="Internal\Isolation\StoreCategoryInstanceEnumeration.cs" />
+    <Compile Include="Internal\Isolation\StoreDeploymentMetadataEnumeration.cs" />
+    <Compile Include="Internal\Isolation\StoreDeploymentMetadataPropertyEnumeration.cs" />
+    <Compile Include="Internal\Isolation\StoreOperationInstallDeployment.cs" />
+    <Compile Include="Internal\Isolation\StoreOperationMetadataProperty.cs" />
+    <Compile Include="Internal\Isolation\StoreOperationPinDeployment.cs" />
+    <Compile Include="Internal\Isolation\StoreOperationScavenge.cs" />
+    <Compile Include="Internal\Isolation\StoreOperationSetCanonicalizationContext.cs" />
+    <Compile Include="Internal\Isolation\StoreOperationSetDeploymentMetadata.cs" />
+    <Compile Include="Internal\Isolation\StoreOperationStageComponent.cs" />
+    <Compile Include="Internal\Isolation\StoreOperationStageComponentFile.cs" />
+    <Compile Include="Internal\Isolation\StoreOperationUninstallDeployment.cs" />
+    <Compile Include="Internal\Isolation\StoreOperationUnpinDeployment.cs" />
+    <Compile Include="Internal\Isolation\StoreSubcategoryEnumeration.cs" />
+    <Compile Include="Internal\Isolation\StoreTransaction.cs" />
+    <Compile Include="Internal\Isolation\StoreTransactionData.cs" />
+    <Compile Include="Internal\Isolation\StoreTransactionOperation.cs" />
+    <Compile Include="Internal\Isolation\StoreTransactionOperationType.cs" />
+    <Compile Include="Internal\Isolation\STORE_ASSEMBLY.cs" />
+    <Compile Include="Internal\Isolation\STORE_ASSEMBLY_FILE.cs" />
+    <Compile Include="Internal\Isolation\STORE_ASSEMBLY_FILE_STATUS_FLAGS.cs" />
+    <Compile Include="Internal\Isolation\STORE_ASSEMBLY_STATUS_FLAGS.cs" />
+    <Compile Include="Internal\Isolation\STORE_CATEGORY.cs" />
+    <Compile Include="Internal\Isolation\STORE_CATEGORY_INSTANCE.cs" />
+    <Compile Include="Internal\Isolation\STORE_CATEGORY_SUBCATEGORY.cs" />
+    <Compile Include="Microsoft\Internal\Performance\CodeMarkerApp.cs" />
+    <Compile Include="Microsoft\Internal\Performance\CodeMarkerEvent.cs" />
+    <Compile Include="Microsoft\Internal\Performance\CodeMarkers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Application\ErrorPiece.resources" />
+    <EmbeddedResource Include="Application\MaintenancePiece.resources" />
+    <EmbeddedResource Include="Application\PlatformPiece.resources" />
+    <EmbeddedResource Include="Application\ProgressPiece.resources" />
+    <EmbeddedResource Include="Application\SplashPiece.resources" />
+    <EmbeddedResource Include="Application\UpdatePiece.resources" />
+    <EmbeddedResource Include="Application\UserInterfaceForm.resources" />
+    <EmbeddedResource Include="AssemblyTemplate.xml" />
+    <EmbeddedResource Include="datatypes.dtd" />
+    <EmbeddedResource Include="defaultappicon.ico" />
+    <EmbeddedResource Include="form.ico" />
+    <EmbeddedResource Include="information.bmp" />
+    <EmbeddedResource Include="manifest.2.0.0.15-pre.adaptive.xsd" />
+    <EmbeddedResource Include="manifest.2.0.0.15-pre.adaptive_elements.xsd" />
+    <EmbeddedResource Include="manifest.2.0.0.15-pre.xsd" />
+    <EmbeddedResource Include="mpeg-r.0.0.0.1.xsd" />
+    <EmbeddedResource Include="remove.bmp" />
+    <EmbeddedResource Include="restore.bmp" />
+    <EmbeddedResource Include="setup.bmp" />
+    <EmbeddedResource Include="splash.gif" />
+    <EmbeddedResource Include="System.Deployment.resources" />
+    <EmbeddedResource Include="xml.0.0.0.1.xsd" />
+    <EmbeddedResource Include="xmldsig-core-schema.0.0.0.2.xsd" />
+    <EmbeddedResource Include="XMLSchema.dtd" />
+    <EmbeddedResource Include="xrml2core.0.0.0.1.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{60D8ED3B-E6C1-4D8D-B059-9E46289F214C}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Drawing\System.Drawing.csproj">
+      <Project>{60D8ED3B-E6C1-4D8D-B059-9E46289F2151}</Project>
+      <Name>System.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Security\System.Security.csproj">
+      <Project>{60D8ED3B-E6C1-4D8D-B059-9E46289F2153}</Project>
+      <Name>System.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Windows.Forms\System.Windows.Forms.csproj">
+      <Project>{60D8ED3B-E6C1-4D8D-B059-9E46289F2154}</Project>
+      <Name>System.Windows.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Xml\System.Xml.csproj">
+      <Project>{60D8ED3B-E6C1-4D8D-B059-9E46289F2155}</Project>
+      <Name>System.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{60D8ED3B-E6C1-4D8D-B059-9E46289F2156}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
