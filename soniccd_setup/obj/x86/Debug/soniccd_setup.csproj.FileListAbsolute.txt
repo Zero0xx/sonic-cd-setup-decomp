@@ -1,0 +1,1 @@
+C:\Users\Tler (Josiah)\Documents\GitHub\sonic-cd-setup-decomp\soniccd_setup\obj\x86\Debug\soniccd_setup.csproj.CoreCompileInputs.cache

@@ -1,0 +1,2 @@
+C:\Users\Tler (Josiah)\Documents\GitHub\sonic-cd-setup-decomp\Microsoft.DirectX.Direct3D\obj\x86\Debug\Microsoft.DirectX.Direct3D.csproj.AssemblyReference.cache
+C:\Users\Tler (Josiah)\Documents\GitHub\sonic-cd-setup-decomp\Microsoft.DirectX.Direct3D\obj\x86\Debug\Microsoft.DirectX.Direct3D.csproj.CoreCompileInputs.cache

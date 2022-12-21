@@ -1,0 +1,1 @@
+C:\Users\Tler (Josiah)\Documents\GitHub\sonic-cd-setup-decomp\System.Runtime.Serialization.Formatters.Soap\obj\Debug\System.Runtime.Serialization.Formatters.Soap.csproj.CoreCompileInputs.cache

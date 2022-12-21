@@ -1,0 +1,1 @@
+C:\Users\Tler (Josiah)\Documents\GitHub\sonic-cd-setup-decomp\System.Windows.Forms\obj\Debug\System.Windows.Forms.csproj.CoreCompileInputs.cache
